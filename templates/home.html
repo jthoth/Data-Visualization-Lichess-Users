@@ -1,0 +1,21 @@
+{% extends "template.html" %}
+
+{% block body %}
+
+{% if error %}
+  
+ <script>
+      var error = {{ error|tojson }};
+ </script>
+
+{% else %} 
+
+   <script>
+      var error = '' ;
+  </script>
+
+{% endif %}
+
+	  <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+
+{% endblock %}

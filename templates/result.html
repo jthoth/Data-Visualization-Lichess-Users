@@ -1,0 +1,24 @@
+{% extends "template.html" %}
+
+{% block body %}
+
+  	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+{% if computeMaths %}
+
+
+ <script>
+ 
+      var data =  {{ computeMaths |tojson | safe }};
+	  var username = {{ username |tojson | safe }};
+	  var variation =  {{ variation |tojson | safe }};
+	  
+ </script>
+
+{% endif %}
+
+	<script src="{{ url_for('static', filename='js/result.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/equations.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/charts.js') }}"></script>
+ 
+{% endblock %}
