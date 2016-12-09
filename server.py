@@ -58,7 +58,7 @@ def computeMaths(args):
 
 	R = { 'at':datetime.utcnow(),'elo':actElo,'games':games,'hours':hours,'gwrg':GwRG,'gwrh':GwRH} # BUILD LOG 
  
-	MONGODB_URI = '' # YOUR STRING CONECTION 
+	MONGODB_URI = 'mongodb://thoth:admin753@ds143737.mlab.com:43737/mathlichess' 
 	client = pymongo.MongoClient(MONGODB_URI)
 	db = client.get_default_database()
 
