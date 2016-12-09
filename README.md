@@ -2,5 +2,5 @@
 
 > December, 2016: Math Lichess
 
-![results](/statics/img/example.png "EXAMPLE")
+![results](/static/img/example.png "EXAMPLE")
 
