@@ -1,4 +1,4 @@
-# MATH ON LICHESS
+# PROJECTIONS ON LICHESS
 
 > December, 2016: Math Lichess
 
